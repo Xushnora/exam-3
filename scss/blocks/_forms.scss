@@ -1,0 +1,104 @@
+#acide {
+    width: 1450px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.acide {
+
+    &__box {
+        padding-top: 40px;
+        border-top: 2px solid #aaa;
+    }
+
+    &__list {
+        @include between;
+        @include list-none;
+        padding-bottom: 15px;
+        animation: acide-anim 8s ease-in-out 1s infinite;
+    }
+
+    &__item {
+
+    }
+
+    &__img {
+        max-width: 150px;
+        height: 100px;
+        opacity: 0.5;
+        transition: all 0.4s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #acide {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #acide {
+        width: 100%;
+    }
+
+    &__list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    .acide__item:nth-child(1) {
+        display: none;
+    }
+
+    .acide__item:nth-child(6) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .acide__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .acide__item:nth-child(2) {
+        display: none;
+    }
+
+    .acide__item:nth-child(5) {
+        display: none;
+    }
+
+}
+
+// @keyframes acide-anim{
+//     0% {
+//         transform: translate3d(0px, 0px, 0px);
+//     }
+   
+//     100%{
+//         transform: translate3d(-1230px, 0px, 0px);
+//     }
+// }

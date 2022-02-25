@@ -1531,6 +1531,17 @@ img {
   display: block;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero__big-box {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .container {
     width: 90%;
@@ -1650,6 +1661,17 @@ img {
   color: #555;
   margin-bottom: 0;
   line-height: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .services {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -2065,6 +2087,17 @@ img {
   color: #d52a27;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .product {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .container {
     width: 90%;
@@ -2129,6 +2162,17 @@ img {
 .shopify__img {
   width: 100% !important;
   height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #shopify {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -2203,6 +2247,10 @@ img {
   padding-bottom: 80px;
 }
 
+.garden__row {
+  margin-bottom: 50px;
+}
+
 .garden__img {
   width: 100%;
   height: 385px;
@@ -2222,12 +2270,47 @@ img {
   line-height: 35px;
   margin-bottom: 20px;
   max-width: 370px;
+  position: relative;
 }
 
 .garden__text {
   font-size: 14px;
   color: #555;
   margin-bottom: 25px;
+}
+
+.garden .garden__slides {
+  position: relative;
+}
+
+.garden .garden__slides .carousel .carousel-indicators .btn-garden1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0a472e;
+  position: absolute;
+  bottom: -100px;
+  left: 50px;
+}
+
+.garden .garden__slides .carousel .carousel-indicators .btn-garden2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0a472e;
+  position: absolute;
+  bottom: -100px;
+  left: 30px;
+}
+
+.garden .garden__slides .carousel .carousel-indicators .btn-garden3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0a472e;
+  position: absolute;
+  bottom: -100px;
+  left: 10px;
 }
 
 .garden .garden__link-box:hover .garden__link {
@@ -2268,8 +2351,42 @@ img {
   transition: all 0.4s ease;
 }
 
+.garden__name {
+  font-size: .875rem;
+  color: #aaa;
+  font-weight: 400;
+}
+
 .bx-chevrons-right {
   color: #bac34e;
+}
+
+.title-bef::before {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 38px;
+  background-image: url(../../images/garden-tirnoq.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 6px;
+  left: -80px;
+}
+
+.slider-text {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #garden {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -2287,6 +2404,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .garden {
+    padding-bottom: 0;
+  }
   .garden__img {
     width: 100% !important;
     height: 438px;
@@ -2299,6 +2419,96 @@ img {
   }
   .garden__desc-box {
     padding: 0;
+  }
+}
+
+#acide {
+  width: 1450px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.acide__box {
+  padding-top: 40px;
+  border-top: 2px solid #aaa;
+}
+
+.acide__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding-bottom: 15px;
+  -webkit-animation: acide-anim 8s ease-in-out 1s infinite;
+          animation: acide-anim 8s ease-in-out 1s infinite;
+}
+
+.acide__img {
+  max-width: 150px;
+  height: 100px;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.acide__img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #acide {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #acide {
+    width: 100%;
+  }
+  __list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .acide__item:nth-child(1) {
+    display: none;
+  }
+  .acide__item:nth-child(6) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .acide__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .acide__item:nth-child(2) {
+    display: none;
+  }
+  .acide__item:nth-child(5) {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

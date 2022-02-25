@@ -1046,6 +1046,21 @@
 
 
 
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero__big-box {
+        width: 100%;
+    }
+
+}
+
+
+
 @media screen and (max-width: 990px) {
     .container {
         width: 90%;

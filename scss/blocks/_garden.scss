@@ -7,6 +7,10 @@
 .garden {
     padding-bottom: 80px;
 
+    &__row {
+        margin-bottom: 50px;
+    }
+
     &__img {
         width: 100%;
         height: 385px;
@@ -25,12 +29,46 @@
         line-height: 35px;
         margin-bottom: 20px;
         max-width: 370px;
+        position: relative
     }
 
     &__text {
         font-size: 14px;
         color: #555;
         margin-bottom: 25px;
+    }
+
+    .garden__slides {
+        position: relative;
+
+        .carousel .carousel-indicators .btn-garden1 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $dark-gren;
+            position: absolute;
+            bottom: -100px;
+            left: 50px;
+        }
+        .carousel .carousel-indicators .btn-garden2 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $dark-gren;
+            position: absolute;
+            bottom: -100px;
+            left: 30px;
+        }
+        .carousel .carousel-indicators .btn-garden3 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $dark-gren;
+            position: absolute;
+            bottom: -100px;
+            left: 10px;
+        }
+
     }
 
     .garden__link-box {
@@ -65,16 +103,50 @@
             left: 0;
             bottom: 0;
             transition: all 0.4s ease;
-
         }
-
     }
 
+    &__name {
+        font-size: .875rem;
+        color: #aaa;
+        font-weight: 400;
+    }
 }
+
 .bx-chevrons-right {
     color: $color-gren;
 }
 
+.title-bef::before {
+    @include before;
+    width: 48px;
+    height: 38px;
+    background-image: url(../../images/garden-tirnoq.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 6px;
+    left: -80px;
+}
+
+.slider-text {
+    padding-top: 60px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #garden {
+        width: 100%;
+    }
+
+}
 
 
 @media screen and (max-width: 990px) {
@@ -94,11 +166,15 @@
             padding: 0 20px;
         }
     }
-
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     .garden {
+        padding-bottom: 0;
+
         &__img {
             width: 100% !important;
             height: 438px;
@@ -115,3 +191,4 @@
         }
     }
 }
+
