@@ -1,0 +1,223 @@
+
+
+//  >>>>>>>>>>>>>>  HERO  <<<<<<<<<<<<<<<<
+
+
+#hero {
+    width: 100%;
+    background-image: url('../../images/home2_bgbody.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+//  HERO 
+
+.hero-part {
+    
+    &__slide {
+        padding: 30px 0;
+    }
+
+    &__content {
+        
+    }
+
+    &__list {
+        @include list-none;
+    }
+
+    &__item {
+        padding-top: 30px;
+    }
+
+    &__img-box {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__desc {
+        position: absolute;
+        top: 12%;
+        left: 12%;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+        color: #0a472e;
+        margin-bottom: 100px;
+    }
+
+    &__link-box {
+        &:hover .hero-part__link{
+            color: $color-gren;
+        }
+        &:hover .hero-part__link::after{
+            background-color: $color-gren;
+        }
+
+        &:hover .fal{
+            color: $color-gren;
+            transform: translateX(5px);
+        }
+    }
+
+    &__link {
+        font-size: 12px;
+        color: #000;
+        font-weight: 700;
+        @include link-none;
+        transition: all 0.2s ease;
+        position: relative;
+        padding-bottom: 5px;
+
+        &::after {
+            @include before;
+            width: 72px;
+            height: 1px;
+            background-color: $text-color2;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: all 0.4s ease;
+        }
+    }
+
+    .fal {
+        font-size: 12px;
+        transition: all 0.4s ease;
+        color: $text-color2;
+    }
+
+    &__info {
+        position: absolute;
+        top: 22%;
+        left: 20%;
+        text-align: center;
+    }
+    &__info-title {
+        font-family: $hero-fonts;
+        font-size: 25px;
+        color: $nav-color;
+    }
+    &__prosent {
+        font-size: 40px;
+        color: #f4ed23;
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 0.875rem;
+    }
+    &__btns {
+        &:hover {
+            .hero-part__link-shop {
+                background-color: #fff;
+                color: $color-gren;
+            }
+            .fal {
+                color: $color-gren;
+            }
+        }
+
+    }
+    &__link-shop {
+        font-size: 12px;
+        color: $nav-color;
+        font-weight: 700;
+        padding: 12px 29px 9px 29px;
+        background-color: #bac34e;
+        border-radius: 30px;
+        display: inline-block;
+        @include link-none;
+        transition: all 0.3s ease;
+
+        .fal {
+            color: $nav-color;
+        }
+    }
+
+}
+
+
+
+
+// RESPONSIVE
+
+
+
+@media screen and (max-width: 990px) {
+    .container {
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    // hero 
+
+    .hero-part {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+       
+        &__list {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+        &__item {
+            padding-top: 0;
+            padding-bottom: 30px;
+
+            &:nth-child(1) {
+                padding-right: 15px;
+            }
+            &:nth-child(2) {
+                padding-left: 15px;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    // hero
+
+    .hero-part {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            padding-top: 0;
+            padding-bottom: 30px;
+
+            &:nth-child(1) {
+                padding-right: 0;
+            }
+            &:nth-child(2) {
+                padding-left: 0;
+            }
+        }
+    }
+}

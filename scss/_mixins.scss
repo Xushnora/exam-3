@@ -3,3 +3,33 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin link-none {
+  text-decoration: none;
+}
+
+@mixin list-none {
+  list-style-type: none;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin before {
+  content: '';
+  display: inline-block;
+}
+
+@mixin bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
