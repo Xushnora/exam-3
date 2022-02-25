@@ -2461,6 +2461,76 @@ img {
   opacity: 1;
 }
 
+.cards .cards__row {
+  margin-bottom: 60px;
+}
+
+.cards .cards__desc {
+  padding: 40px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .cards__icon {
+  height: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  border-right: 1px solid #aaa;
+}
+
+.cards .cards__info {
+  height: 122px;
+  padding: 0 15px 0 25px;
+}
+
+.cards .cards__span {
+  font-size: 13px;
+  color: #aaa;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cards .cards__title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.cards .cards__tel {
+  margin-bottom: 15px;
+}
+
+.cards .cards__tel-link {
+  font-size: 30px;
+  font-weight: 400;
+  color: #bac34e;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.cards .cards__tel-link:hover {
+  color: #bac34e;
+}
+
+.cards .cards__email-link {
+  font-size: 14px;
+  color: #0a472e;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 90%;
@@ -2493,6 +2563,9 @@ img {
   .acide__item:nth-child(6) {
     display: none;
   }
+  .cards__tel-link {
+    font-size: 22px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2509,6 +2582,27 @@ img {
   }
   .acide__item:nth-child(5) {
     display: none;
+  }
+  .cards__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 0 !important;
+    margin-bottom: 15px;
+  }
+  .cards__icon {
+    padding: 0;
+    border-right: none !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
