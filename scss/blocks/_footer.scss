@@ -134,3 +134,36 @@
     }
 
 }
+
+
+.tops-arrow {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+}
+
+.tops-btn {
+    width: 40px;
+    height: 40px;
+    background: #bac34e;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include link-none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #272727;
+    }
+  
+    .bx-chevrons-up {
+        font-size: 22px;
+        color: #fff;
+    }
+}
