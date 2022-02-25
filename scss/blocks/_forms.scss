@@ -94,6 +94,36 @@
         @include link-none;
     }
 
+    .cards__text {
+        font-size: 14px;
+        color: #555;
+        line-height: 20px;
+    }
+    .cards__form {
+        position: relative;
+    }
+    .cards__input {
+        height: 38px;
+        border: 1px solid #e2e2e2;
+        width: 100%;
+        border-radius: 50px;
+        padding: 0 45px 0 15px;
+
+    }
+    .cards__btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: none;
+        width: 38px;
+        height: 38px;
+        border: 0;
+        padding: 0;
+    }
+    .fal {
+        color: #555;
+    }
+
 }
 
 
