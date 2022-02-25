@@ -11,9 +11,13 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
+
   <section id="hero" class="hero">
     <div class="container">
       <div class="hero__navbox navbox">
@@ -82,11 +86,52 @@
                   </li>
                   <li class="magamenu__item">
                     <i class="fal fa-meat"></i>
-                    <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                    <div class="magamenu__arrow">
+                      <a class="magamenu__link" href="#">Supplyments</a>
+                      <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="supps__modal">
+                      <ul class="supps__list">
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Fruits</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Fruits</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Fruits</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Fruits</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="magamenu__item">
                     <i class="fal fa-egg-fried"></i>
-                    <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                    <div class="magamenu__arrow">
+                      <a class="magamenu__link" href="#">Dairy Bread & Eggs</a>
+                      <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="supps__modal">
+                      <ul class="supps__list">
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Vagitables</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Juice</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Meal</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Fruits</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Color</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="magamenu__item">
                     <i class="fal fa-pizza-slice"></i>
@@ -94,7 +139,29 @@
                   </li>
                   <li class="magamenu__item">
                     <i class="fal fa-apple-alt"></i>
-                    <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                    <div class="magamenu__arrow">
+                      <a class="magamenu__link" href="#">Beauty & Care</a>
+                      <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="supps__modal">
+                      <ul class="supps__list">
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Vagitables</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Juice</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Meal</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Fruits</a>
+                        </li>
+                        <li class="supps__item">
+                          <a class="supps__link" href="#">Color</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="magamenu__item">
                     <i class="fal fa-volleyball-ball"></i>
@@ -293,10 +360,10 @@
             <div class="hero-part__slide">
               <div class="hero-part__animation animations">
                 <span class="animations__span">Fresh and Tasty</span>
-                <h2 class="animations__title">
+                <h2 class="animations__title animate-animated animate__fadeInRight" style="animation-duration: 1s;">
                   Farm Market <br> Organic Shop
                 </h2>
-                <div class="hero-part__link-box">
+                <div class="hero-part__link-box animate-animated animate__fadeOut" style="animation-duration: 1s;">
                   <a class="hero-part__link" href="#">Shop Now</a>
                   <i class="fal fa-angle-double-right"></i>
                 </div>
@@ -359,10 +426,9 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> 
       </div>
     </div> 
-
   </section>
 
   <!-- servic -->
@@ -418,7 +484,7 @@
         </ul>
       </div>
     </div>
-  </section> 
+  </section>
 
   <!-- product -->
 
@@ -544,33 +610,41 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section> 
 
-  <section id="shopify">
+   <section id="shopify">
     <div class="shopify">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-xs-12 ApColumn">
             <div class="shopify__img-box mbt">
+              <div class="shopify__top"></div>
               <img class="shopify__img" src="./images/shopify1.jpg" alt="shopify">
+              <div class="shopify__bottom"></div>
             </div>
           </div>
           <div class="col-md-6 col-xs-12 ApColumn">
             <div class="rowwer">
               <div class="col-xs-12">
                 <div class="shopify__middle-img mbt">
+                  <div class="shopify__top"></div>
                   <img class="shopify__s-img" src="./images/shopify2.jpg" alt="shopify">
+                  <div class="shopify__bottom"></div>
                 </div>
               </div>
              <div class="d-flex shopify__rows">
-              <div class="col-xs-6">
+              <div class="shopify__hover1 col-xs-6">
                 <div class="shopify__small-img1 mbt">
+                  <div class="shopify__top"></div>
                   <img class="shopify__s-img" src="./images/shopify2.1.jpg" alt="img">
+                  <div class="shopify__bottom"></div>
                 </div>
               </div>
-              <div class="col-xs-6">
+              <div class="shopify__hover2 col-xs-6">
                 <div class="shopify__small-img2 mbt">
-                  <img class="shopify__s-img" src="./images/shopfiy2.2.jpg" alt="img">
+                    <div class="shopify__top"></div>
+                    <img class="shopify__s-img" src="./images/shopfiy2.2.jpg" alt="img">
+                    <div class="shopify__bottom"></div>
                 </div>
               </div>
              </div>
@@ -578,7 +652,9 @@
           </div>
           <div class="col-md-3 col-xs-12 ApColumn">
             <div class="shopify__img-box mbt">
+              <div class="shopify__top"></div>
               <img class="shopify__img" src="./images/shopify3.jpg" alt="shopify">
+              <div class="shopify__bottom"></div>
             </div>
           </div>
         </div>
@@ -712,7 +788,7 @@
 
 <!-- GARDEN -->
 
-<section id="garden">
+ <section id="garden">
   <div class="garden">
     <div class="container">
       <div class="garden__row row">
@@ -909,10 +985,10 @@
           </ul>
         </div>
         <div class="col-sp-12 col-md-4 col-lg-2 footer__info information">
-          <h4 class="information__title ttl">Information</h4>
+          <h4 class="information__title ttl">my account</h4>
           <ul class="information__list">
             <li class="information__item">
-              <a class="information__link" href="#">About Us</a>
+              <a class="information__link" href="#">My account</a>
             </li>
             <li class="information__item">
               <a class="information__link" href="#">Blog</a>
@@ -923,16 +999,13 @@
             <li class="information__item">
               <a class="information__link" href="#">Contact</a>
             </li>
-            <li class="information__item">
-              <a class="information__link" href="#">Servise</a>
-            </li>
           </ul>
         </div>
         <div class="col-sp-12 col-md-4 col-lg-2 footer__info information">
-          <h4 class="information__title ttl">Information</h4>
+          <h4 class="information__title ttl">catigories</h4>
           <ul class="information__list">
             <li class="information__item">
-              <a class="information__link" href="#">About Us</a>
+              <a class="information__link" href="#">catigories</a>
             </li>
             <li class="information__item">
               <a class="information__link" href="#">Blog</a>

@@ -6,6 +6,7 @@
     &__row {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 
 }
@@ -43,8 +44,7 @@
     }
 }
 
-.information {
-
+.information{
 
     &__list {
         padding: 0;
@@ -61,6 +61,12 @@
         color: #555;
         font-size: 14px;
         cursor: pointer;
+        transition: all 0.4s ease;
+
+        &:hover {
+            color: $color-gren;
+        }
+
     }
 }
 
@@ -106,10 +112,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-        }
-
-        &__store {
-
         }
 
         .information {

@@ -1,6 +1,13 @@
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@font-face {
+  font-family: "Greatest Richmond";
+  src: url("../fonts/greatest_richmond/Greatest\ Richmond.ttf") format("woff2"),
+    url("../fonts/greatest_richmond/GreatestRichmond.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 @font-face {
