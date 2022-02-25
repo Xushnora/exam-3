@@ -164,6 +164,7 @@ img {
 
 .hero-part__slide {
   padding: 30px 0;
+  position: relative;
 }
 
 .hero-part__list {
@@ -176,11 +177,36 @@ img {
 
 .hero-part__img-box {
   position: relative;
+  width: 100% !important;
 }
 
 .hero-part__img {
-  width: 100%;
-  height: auto;
+  max-width: 100% !important;
+  height: 100%;
+}
+
+.hero-part__animation {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 15;
+}
+
+.hero-part__animation .animations__span {
+  display: block;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 24px;
+  line-height: 24px;
+  color: #bac34e;
+  letter-spacing: 1.1px;
+  margin-bottom: 20px;
+}
+
+.hero-part__animation .animations__title {
+  ont-size: 40px;
+  line-height: 45px;
+  color: #0a472e;
+  margin-bottom: 15%;
 }
 
 .hero-part__desc {
@@ -299,6 +325,7 @@ img {
     padding-right: 0;
   }
   .hero-part {
+    width: 100% !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -307,6 +334,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .hero-part__list {
     padding: 0;
@@ -320,7 +349,7 @@ img {
             flex-direction: row;
   }
   .hero-part__img {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
   }
   .hero-part__item {
@@ -1327,7 +1356,7 @@ img {
   width: 300px;
   height: 100%;
   background-color: #0a472e;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -400px;
   z-index: 1100;
@@ -1363,6 +1392,7 @@ img {
   padding: 15px;
   border-bottom: 1px solid #181818;
   width: 100%;
+  color: #fff;
 }
 
 .md .home__link {
@@ -1373,9 +1403,9 @@ img {
   width: 300px;
   height: 100%;
   background-color: #0a472e;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: -400px;
+  left: -300px;
   z-index: 1101;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -1442,6 +1472,46 @@ img {
   display: none;
 }
 
+.shopper {
+  width: 300px;
+  height: 100%;
+  background-color: #0a472e;
+  position: fixed;
+  top: 0;
+  left: -400px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 1200;
+}
+
+.shopper .pages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shopper .pages__item {
+  margin-bottom: 15px;
+}
+
+.card-body {
+  background-color: #0a472e;
+  padding: 0 !important;
+}
+
+.collapse {
+  background-color: #0a472e;
+}
+
 .bx-x {
   color: #555;
   font-size: 22px;
@@ -1453,10 +1523,6 @@ img {
 }
 
 .show-home {
-  left: 0;
-}
-
-.show-shops {
   left: 0;
   opacity: 1;
 }
@@ -2037,6 +2103,93 @@ img {
   }
   .product__big-title {
     max-width: 100%;
+  }
+}
+
+#shopify {
+  width: 1450px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.shopify {
+  padding-bottom: 80px;
+}
+
+.shopify__small-img1 {
+  padding-top: 29px;
+  padding-right: 14px;
+}
+
+.shopify__small-img2 {
+  padding-top: 29px;
+  padding-left: 14px;
+}
+
+.shopify__img {
+  width: 100% !important;
+  height: auto;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #shopify {
+    width: 100%;
+  }
+  .shopify__img {
+    width: 100%;
+  }
+  .shopify__small-img1 {
+    padding-top: 15px;
+    padding-right: 14px;
+  }
+  .shopify__small-img2 {
+    padding-top: 15px;
+    padding-left: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shopify__img {
+    width: 100% !important;
+    height: 215px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6px;
+  }
+  .shopify__s-img {
+    width: 100% !important;
+    height: 215px !important;
+    padding: 0 !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6px;
+  }
+  .shopify__small-img1 {
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .shopify__small-img2 {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .shopify__rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .shopify .mbt {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

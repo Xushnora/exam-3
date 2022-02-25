@@ -18,6 +18,7 @@ elSearchBtn.addEventListener('click', function(){
 });
 
 
+
 let elHomebutton = document.getElementById('openHomeBtn');
 let elHomeModal= document.getElementById('homeModal');
 let elHomeClose= document.getElementById('homeClose');
@@ -30,21 +31,28 @@ elHomeClose.addEventListener('click', function(){
 });
 
 
-let elShopBtn = document.getElementById('openShopBtn1');
-let elShopModal= document.getElementById('shopOpen1');
-let elIcon1 = document.getElementById('icon1');
 
+let elHomebutton2 = document.getElementById('openHomeBtn2');
+let elHomeModal2 = document.getElementById('homeModal2');
+let elHomeClose2 = document.getElementById('homeClose2');
 
-let count = 0;
-elShopBtn.addEventListener('click', function(){
-    elShopModal.classList.toggle('show-shop');
-
-    if (count == 0) {
-        elIcon1.className = "bx bx-chevrons-up";
-        count++;
-    } else {
-        elIcon.className = "bx bx-chevrons-down";
-        count = 0;
-    }
-
+elHomebutton2.addEventListener('click', function(){
+  elHomeModal2.classList.add('show-home');
+})
+elHomeClose2.addEventListener('click', function(){
+  elHomeModal2.classList.remove('show-home');
 });
+
+
+let elHomebutton3 = document.getElementById('openHomeBtn3');
+let elHomeModal3 = document.getElementById('homeModal3');
+let elHomeClose3 = document.getElementById('homeClose3');
+
+elHomebutton3.addEventListener('click', function(){
+  elHomeModal3.classList.add('show-home');
+})
+elHomeClose3.addEventListener('click', function(){
+  elHomeModal3.classList.remove('show-home');
+});
+
+

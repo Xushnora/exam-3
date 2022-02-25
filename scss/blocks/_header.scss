@@ -879,7 +879,7 @@
     width: 300px;
     height: 100%;
     background-color: $dark-gren;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -400px;
     z-index: 1100;
@@ -913,6 +913,7 @@
         padding: 15px;
         border-bottom: 1px solid #181818;
         width: 100%;
+        color: #fff;
     }
     .home__link {
         color: #fff;
@@ -923,9 +924,9 @@
     width: 300px;
     height: 100%;
     background-color: $dark-gren;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: -400px;
+    left: -300px;
     z-index: 1101;
     transition: all 0.4s ease;
     overflow-x: hidden;
@@ -983,7 +984,39 @@
     }
 }
 
+.shopper {
+    width: 300px;
+    height: 100%;
+    background-color: $dark-gren;
+    position: fixed;
+    top: 0;
+    left: -400px;
+    transition: all 0.4s ease;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1200;
 
+    .pages__list {
+        display: flex;
+        flex-direction: column;
+        @include link-none;
+        margin: 0;
+        padding: 0;
+
+    }
+    .pages__item {
+        margin-bottom: 15px;
+    }
+}
+
+.card-body {
+    background-color: $dark-gren;
+    padding: 0 !important;
+}
+
+.collapse {
+    background-color: $dark-gren;
+}
 
 
 .bx-x {
@@ -998,13 +1031,14 @@
 
 .show-home {
     left: 0;
-    // opacity: 1;
+    opacity: 1;
+
 }
 
-.show-shops {
-    left: 0;
-    opacity: 1;
-}
+// .show-shops {
+//     left: 0;
+//     opacity: 1;
+// }
 
 .show-shop {
     display: block;
