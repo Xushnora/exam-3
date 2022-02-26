@@ -497,6 +497,9 @@ img {
   .hero-btn-box {
     display: none;
   }
+  .animations__title {
+    font-size: 35px !important;
+  }
 }
 
 .hero__big-box {
