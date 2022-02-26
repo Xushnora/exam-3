@@ -491,6 +491,12 @@ img {
   .hero-part__item:nth-child(2) {
     padding-left: 0;
   }
+  .hero-btn-box2 {
+    display: none;
+  }
+  .hero-btn-box {
+    display: none;
+  }
 }
 
 .hero__big-box {
