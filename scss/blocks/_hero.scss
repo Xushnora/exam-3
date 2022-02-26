@@ -54,7 +54,7 @@
             margin-bottom: 20px;
         }
         .animations__title {
-            ont-size: 40px;
+            font-size: 40px;
             line-height: 45px;
             color: #0a472e;
             margin-bottom: 15%;
@@ -167,6 +167,78 @@
 
 }
 
+
+.hero-btn-box {
+    position: absolute;
+    bottom: 80px;
+    right: 70px;
+    z-index: 10000000;
+}
+.hero-buttons {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $color-gren;
+        .bx-arrow-back {
+            color: #fff;
+        }
+    }
+}
+
+.bx-arrow-back{
+    font-size: 15px;
+    color: $dark-gren;
+    transition: all 0.3s ease;
+}
+
+// 1-button
+
+.hero-btn-box2 {
+    position: absolute;
+    bottom: 80px;
+    right: 125px;
+    z-index: 1000000;
+}
+.hero-buttons2 {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $color-gren;
+        .bx-arrow-back {
+            color: #fff;
+        }
+    }
+}
+
+.bx-arrow-back{
+    font-size: 18px;
+    color: $dark-gren;
+    transition: all 0.3s ease;
+}
 
 
 

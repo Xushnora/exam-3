@@ -210,7 +210,7 @@ img {
 }
 
 .hero-part__animation .animations__title {
-  ont-size: 40px;
+  font-size: 40px;
   line-height: 45px;
   color: #0a472e;
   margin-bottom: 15%;
@@ -323,6 +323,96 @@ img {
 
 .hero-part__link-shop .fal {
   color: #fff;
+}
+
+.hero-btn-box {
+  position: absolute;
+  bottom: 80px;
+  right: 70px;
+  z-index: 10000000;
+}
+
+.hero-buttons {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons:focus {
+  outline: none;
+}
+
+.hero-buttons:hover {
+  background-color: #bac34e;
+}
+
+.hero-buttons:hover .bx-arrow-back {
+  color: #fff;
+}
+
+.bx-arrow-back {
+  font-size: 15px;
+  color: #0a472e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero-btn-box2 {
+  position: absolute;
+  bottom: 80px;
+  right: 125px;
+  z-index: 1000000;
+}
+
+.hero-buttons2 {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons2:focus {
+  outline: none;
+}
+
+.hero-buttons2:hover {
+  background-color: #bac34e;
+}
+
+.hero-buttons2:hover .bx-arrow-back {
+  color: #fff;
+}
+
+.bx-arrow-back {
+  font-size: 18px;
+  color: #0a472e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 990px) {
