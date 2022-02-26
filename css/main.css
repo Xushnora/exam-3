@@ -3672,4 +3672,23 @@ img {
     padding-top: 0 !important;
   }
 }
+
+.mains__page {
+  padding: 40px 0;
+  margin-bottom: 60px;
+}
+
+.mains__title {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #0a472e;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
