@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam-3</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+    <div id="body2">
+        <section class="header row" id="about">
+            <div class="container-box">
+                <header class="header">
+                    <div class="header__menu">
+                        <button class="header__menu-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <i class='bx bx-menu'></i>
+                        </button>
+                    </div>
+                    <div class="header__logo-box">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__img" src="./images/freshko-logo.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <form class="header__form">
+                        <div class="header__input-box">
+                            <i class="fal fa-search"></i>
+                            <input class="header__input" type="text" placeholder="Enter Keyword">
+                            <a class="header__form-text" href="#">Search</a>
+                        </div>
+                    </form>
+                    <div class="none-number connect__desc header__nambers">
+                        <div class="connect__icon">
+                            <img src="./images/Screenshot_2.png" alt="headphone">
+                        </div>
+                        <div class="connect__info">
+                            <h5 class="connect__title">Call us 24/7</h5>
+                            <p class="connect__tel">
+                                <a class="connect__tel-link" href="tel:123456789">(1800)-88-66-991</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header__btns users users-with">
+                        <button class="users__btn none-btn users__btn--active" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fal fa-user-alt"></i>
+                        </button>
+                        <button class="users__btn none-btn btnner">
+                            <i class="fal fa-heart"></i>
+                            <span class="users__after-btn btn-after">0</span>
+                        </button>
+                        <button class="users__btn btnner">
+                            <i class="fal fa-shopping-basket"></i>
+                            <span class="users__after-btn btn-after">0</span>
+                        </button>
+                    </div>
+                </header>
+            </div>
+            <div class="navbar-page">
+                <div class="container-box navbar-page">
+                    <div class="navbar-page__modal-box">
+                        <div class="dropdown navbar-page__drop-modal">
+                            <button class="navbar-page__btn2" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class='bx bx-menu'></i>
+                                <span class="navbar-page__title">Shop by Department</span>
+                            </button>
+                            <div class="magamenu dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <ul class="magamenu__list">
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-salad"></i>
+                                        <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-meat"></i>
+                                        <div class="magamenu__arrow">
+                                            <a class="magamenu__link" href="#">Supplyments</a>
+                                            <i class='bx bx-chevron-right'></i>
+                                        </div>
+                                        <div class="supps__modal">
+                                            <ul class="supps__list">
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Fruits</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Fruits</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Fruits</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Fruits</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-egg-fried"></i>
+                                        <div class="magamenu__arrow">
+                                            <a class="magamenu__link" href="#">Dairy Bread & Eggs</a>
+                                            <i class='bx bx-chevron-right'></i>
+                                        </div>
+                                        <div class="supps__modal">
+                                            <ul class="supps__list">
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Vagitables</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Juice</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Meal</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Fruits</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Color</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-pizza-slice"></i>
+                                        <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-apple-alt"></i>
+                                        <div class="magamenu__arrow">
+                                            <a class="magamenu__link" href="#">Beauty & Care</a>
+                                            <i class='bx bx-chevron-right'></i>
+                                        </div>
+                                        <div class="supps__modal">
+                                            <ul class="supps__list">
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Vagitables</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Juice</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Meal</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Fruits</a>
+                                                </li>
+                                                <li class="supps__item">
+                                                    <a class="supps__link" href="#">Color</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-volleyball-ball"></i>
+                                        <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-ice-cream"></i>
+                                        <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-leaf"></i>
+                                        <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                                    </li>
+                                    <li class="magamenu__item">
+                                        <i class="fal fa-badge-percent"></i>
+                                        <a class="magamenu__link" href="#">Fruits & Vegatables</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- munu modal -->
+
+                    <ul class="navbar-page__list">
+                        <li class="navbar-page__item home">
+                            <a class="navbar-page__link" href="index.html">Home</a>
+                            <i class='bx bx-chevron-down'></i>
+                            <div class="home__modal-box">
+                                <ul class="home__list">
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 1</a>
+                                    </li>
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 2</a>
+                                    </li>
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 3</a>
+                                    </li>
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 4</a>
+                                    </li>
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 5</a>
+                                    </li>
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 6</a>
+                                    </li>
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 7</a>
+                                    </li>
+                                    <li class="home__item">
+                                        <a class="home__link" href="#">home 8</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-page__item shop">
+                            <a class="navbar-page__link" href="#">Shop</a>
+                            <i class='bx bx-chevron-down'></i>
+                            <div class="shop__modal-box">
+                                <ul class="shop__list">
+                                    <li class="shop__item">
+                                        <a class="shop__link shop__link--active" href="#">Catigories 1</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                </ul>
+                                <ul class="shop__list">
+                                    <li class="shop__item">
+                                        <a class="shop__link shop__link--active" href="#">Catigories 2</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                </ul>
+                                <ul class="shop__list">
+                                    <li class="shop__item">
+                                        <a class="shop__link shop__link--active" href="#">Catigories 3</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                </ul>
+                                <ul class="shop__list">
+                                    <li class="shop__item">
+                                        <a class="shop__link shop__link--active" href="#">Catigories 4</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-page__item pages">
+                            <a class="navbar-page__link" href="#">Pages</a>
+                            <i class='bx bx-chevron-down'></i>
+                            <div class="pages__modal-box">
+                                <ul class="pages__list">
+                                    <li class="pages__item">
+                                        <a href="#">
+                                            <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                                        </a>
+                                    </li>
+                                    <li class="pages__item">
+                                        <a href="#">
+                                            <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                                        </a>
+                                    </li>
+                                    <li class="pages__item">
+                                        <a href="#">
+                                            <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                                        </a>
+                                    </li>
+                                    <li class="pages__item">
+                                        <a href="#">
+                                            <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                                        </a>
+                                    </li>
+                                    <li class="pages__item">
+                                        <a href="#">
+                                            <img class="pages__img" src="./images/pages4.jpg" alt="pages">
+                                        </a>
+                                    </li>
+                                    <li class="pages__item">
+                                        <a href="#">
+                                            <img class="pages__img" src="./images/pages3.jpg" alt="pages">
+                                        </a>
+                                    </li>
+                                    <li class="pages__item">
+                                        <a href="#">
+                                            <img class="pages__img" src="./images/pages5.jpg" alt="pages">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="navbar-page__item">
+                            <a class="navbar-page__link" href="#">Blog</a>
+                        </li>
+                        <li class="navbar-page__item">
+                            <a class="navbar-page__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="hero-s">
+            <div class="container">
+                <div class="hero-s__link-box">
+                    <a class="hero-s__link" href="index.html">Home</a>
+                    <i class='bx bx-chevron-right'></i>
+                    <a class="hero-s__link" href="contact.html">Contact us</a>
+                </div>
+            </div>
+        </section>
+        <section class="mains">
+            <div class="container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda recusandae quam aliquam labore
+                    magnam expedita et distinctio in maxime molestias quaerat id, quo voluptatem provident! Delectus
+                    tempore nesciunt facilis architecto quisquam unde dignissimos, fugit autem minus accusamus,
+                    distinctio provident fugiat, aut sunt eius? Earum fugiat deleniti fuga numquam deserunt veniam
+                    eligendi officia expedita, voluptatibus ad ipsam cupiditate, facilis porro dicta nulla voluptatum in
+                    id eaque temporibus qui. Soluta necessitatibus iste adipisci debitis esse, consequuntur sed facilis
+                    nisi fugiat repellat, eligendi totam nihil, quo temporibus qui? Tempore consequatur in deserunt
+                    maxime ipsa consectetur perferendis quibusdam, eos dolore veritatis nam nihil odit provident animi
+                    dolorem, sunt quaerat dicta repudiandae quasi? Deleniti dolores dolore cupiditate, omnis eligendi,
+                    magni facere a consequuntur itaque molestiae magnam! Consequuntur sunt tenetur delectus laudantium
+                    porro obcaecati impedit, commodi nemo alias voluptas aspernatur mollitia consequatur blanditiis
+                    recusandae neque deleniti. Atque neque pariatur at ad dolorem praesentium, distinctio quos unde
+                    voluptatibus accusamus sit necessitatibus molestiae doloremque ab voluptas, culpa, itaque fuga
+                    fugiat maiores amet sunt temporibus natus doloribus. Qui eius voluptatum earum, nesciunt explicabo
+                    iure voluptates, excepturi ex dolore praesentium dignissimos atque adipisci! Et odit suscipit
+                    temporibus. Aperiam at quisquam quibusdam distinctio provident ullam quae quas ad nam, ut quaerat
+                    earum exercitationem, velit veritatis corporis aspernatur nesciunt nisi labore placeat. Consequatur
+                    molestias assumenda obcaecati facere quibusdam facilis similique eveniet iure, suscipit, placeat
+                    voluptatibus aperiam ducimus. Veniam, corporis distinctio qui dignissimos quibusdam explicabo
+                    dolorem doloribus illum inventore a maiores minima recusandae tempore in velit! Placeat voluptas
+                    nobis sit delectus voluptate est corrupti excepturi, praesentium ut deleniti consequuntur autem vero
+                    temporibus laboriosam labore quidem. Quas, doloribus mollitia quam dignissimos eaque minima
+                    reprehenderit doloremque! Voluptatem, culpa itaque at dicta debitis, iure delectus excepturi sed
+                    molestias quidem tempora expedita neque quas officia fuga. Sit perspiciatis aut voluptates commodi
+                    impedit necessitatibus soluta deserunt beatae quidem voluptatum quasi a ut sapiente veritatis
+                    voluptatibus error cumque odit enim repudiandae qui architecto in aspernatur, culpa fugiat.
+                    Quibusdam, nam cumque. Est qui, nulla debitis amet, quam ipsam sint maxime placeat veniam accusamus
+                    ducimus tempora ratione fuga! Eaque maiores fugit et quis repellat autem eum deleniti nemo magni
+                    voluptates ad cum, at magnam odit architecto tempore sed perspiciatis delectus atque voluptatibus
+                    exercitationem sint quod consequuntur! Voluptatibus aperiam fugiat veritatis recusandae voluptate
+                    repellendus possimus, impedit atque aspernatur tenetur sapiente nihil doloribus ea, sunt nobis
+                    quibusdam minima dolorem illo, ut distinctio mollitia neque? Impedit quidem pariatur voluptates ab
+                    velit dolores aperiam repudiandae sed aut. Quasi nulla suscipit adipisci. Suscipit beatae sed
+                    accusantium rerum laudantium praesentium, dolores numquam eius dolore fugit a ipsum. Officia
+                    officiis aut sapiente impedit dolorem asperiores cumque, at doloribus amet quam expedita ea, nemo
+                    nostrum quidem fuga hic modi laborum, voluptas quo voluptatum dicta ipsam pariatur? Perspiciatis
+                    aspernatur expedita perferendis iste repudiandae soluta fugiat dignissimos maiores aut, ullam sunt
+                    temporibus quas repellendus cupiditate iure vitae illum magni alias neque laborum enim repellat ad
+                    minus? Unde in explicabo sed delectus adipisci voluptatibus qui et excepturi quis! Quis blanditiis
+                    fugiat ratione incidunt quos optio itaque, quibusdam adipisci cum, minima eligendi dolore?
+                </p>
+            </div>
+        </section>
+        <section class="connect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12 col-xl-5">
+                        <div class="connect__rows">
+                            <div class="col-md-6 col-xs-12 connect__desc">
+                                <div class="connect__icon">
+                                    <img src="./images/Screenshot_2.png" alt="headphone">
+                                </div>
+                                <div class="connect__info">
+                                    <h5 class="connect__title">Call us 24/7</h5>
+                                    <p class="connect__tel">
+                                        <a class="connect__tel-link" href="tel:123456789"
+                                            title="123456789">(1800)-88-66-991</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 connect__desc">
+                                <div class="connect__icon">
+                                    <img src="./images/Screenshot_1.png" alt="email">
+                                </div>
+                                <div class="connect__info">
+                                    <h5 class="connect__title">Email us</h5>
+                                    <p class="connect__email">
+                                        <a class="connect__email-link" href="mailto:contact@example.com"
+                                            title="contact@example.com">contact@example.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6 col-xl-2">
+                        <ul class="connect__list">
+                            <li class="connect__item">
+                                <a class="connect__link" href="#">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li class="connect__item">
+                                <a class="connect__link" href="#">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                            </li>
+                            <li class="connect__item">
+                                <a class="connect__link" href="#">
+                                    <i class='bx bxl-youtube'></i>
+                                </a>
+                            </li>
+                            <li class="connect__item">
+                                <a class="connect__link" href="#">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6 col-xl-5">
+                        <div class="connect__img-box">
+                            <img src="./images/acide-pic.png" alt="flags">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="col-sp-12 col-md-4 col-lg-2-4 col-xl-3 footer__payment">
+                        <div class="footer__logos">
+                            <img class="footer__img-logo" src="./images/freshko-logo.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-sp-12 col-md-8 col-lg-3 footer__store store">
+                        <h4 class="store__title ttl">Store Location</h4>
+                        <p class="store__text">9066 Green Lake Drive Chevy
+                            <br>
+                            Chase, MD 20815
+                        </p>
+                        <p class="store__time">
+                            <span class="store__span">Monday - Saturday:</span>
+                            8:00 am - 4:00pm
+                        </p>
+                        <p class="store__time">
+                            <span class="store__span">Sunday:</span>
+                            9:00 am - 5:00pm
+                        </p>
+                    </div>
+                    <div class="col-sp-12 col-md-4 col-lg-2 footer__info information">
+                        <h4 class="information__title ttl">Information</h4>
+                        <ul class="information__list">
+                            <li class="information__item">
+                                <a class="information__link" href="#">About Us</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Blog</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Check out</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Contact</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Servise</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sp-12 col-md-4 col-lg-2 footer__info information">
+                        <h4 class="information__title ttl">my account</h4>
+                        <ul class="information__list">
+                            <li class="information__item">
+                                <a class="information__link" href="#">My account</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Blog</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Check out</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sp-12 col-md-4 col-lg-2 footer__info information">
+                        <h4 class="information__title ttl">catigories</h4>
+                        <ul class="information__list">
+                            <li class="information__item">
+                                <a class="information__link" href="#">catigories</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Blog</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Check out</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Contact</a>
+                            </li>
+                            <li class="information__item">
+                                <a class="information__link" href="#">Servise</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <p class="footer__fin-text">
+                        Copyright © 2021
+                        <span class="spanss">Freshio</span>
+                        . All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="tops-arrow">
+            <a href="#" class="tops-btn">
+                <i class='bx bx-chevrons-up'></i>
+            </a>
+        </div>
+
+        <!-- MODALS -->
+
+        <!-- search modal -->
+
+        <div class="search-modal sr" id="searchModal">
+            <form class="header__forma">
+                <div class="header__input-box">
+                    <i class="fal fa-search"></i>
+                    <input class="header__input sr__input" type="text" placeholder="Enter Keyword">
+                    <a class="header__form-text" href="#">Search</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- home modal -->
+
+        <div class="home__modal md" id="homeModal">
+            <button class="md__btn-back" id="homeClose">
+                <i class="fal fa-angle-double-left"></i>
+                Back to home
+            </button>
+            <ul class="home__list">
+                <li class="home__item">
+                    <a class="home__link" href="#">home 1</a>
+                </li>
+                <li class="home__item">
+                    <a class="home__link" href="#">home 2</a>
+                </li>
+                <li class="home__item">
+                    <a class="home__link" href="#">home 3</a>
+                </li>
+                <li class="home__item">
+                    <a class="home__link" href="#">home 4</a>
+                </li>
+                <li class="home__item">
+                    <a class="home__link" href="#">home 5</a>
+                </li>
+                <li class="home__item">
+                    <a class="home__link" href="#">home 6</a>
+                </li>
+                <li class="home__item">
+                    <a class="home__link" href="#">home 7</a>
+                </li>
+                <li class="home__item">
+                    <a class="home__link" href="#">home 8</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- shop modal -->
+
+        <div class="pem" id="homeModal2">
+            <button class="md__btn-back" id="homeClose2">
+                <i class="fal fa-angle-double-left"></i>
+                Back to home
+            </button>
+            <div class="top-menu">
+                <ul class="top-menu__list">
+                    <li class="top-lists">
+                        <div class="top-menus">
+                            <a class="top-menu__link" href="#">Catigories 1</a>
+                            <button class="top-menu__arrow" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                aria-expanded="false" aria-controls="collapseExample"><i class='bx bx-chevrons-down'
+                                    id="icon1"></i></button>
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <ul class="shop__list lists1" id="shopOpen1">
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-lists">
+                        <div class="top-menus">
+                            <a class="top-menu__link" href="#">Catigories 2</a>
+                            <button class="top-menu__arrow" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+                                aria-expanded="false" aria-controls="collapseExample"><i class='bx bx-chevrons-down'
+                                    id="icon1"></i></button>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                <ul class="shop__list lists1">
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Orange</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-lists">
+                        <div class="top-menus">
+                            <a class="top-menu__link" href="#">Catigories 3</a>
+                            <button class="top-menu__arrow" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+                                aria-expanded="false" aria-controls="collapseExample"><i class='bx bx-chevrons-down'
+                                    id="icon1"></i></button>
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                <ul class="shop__list lists1">
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Orange</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-lists">
+                        <div class="top-menus">
+                            <a class="top-menu__link" href="#">Catigories 4</a>
+                            <button class="top-menu__arrow" data-bs-toggle="collapse" data-bs-target="#collapseExample4"
+                                aria-expanded="false" aria-controls="collapseExample"><i class='bx bx-chevrons-down'
+                                    id="icon1"></i></button>
+                        </div>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body">
+                                <ul class="shop__list lists1">
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Vegatable</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Tomato</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Cabbage</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Juice</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Meat</a>
+                                    </li>
+                                    <li class="shop__item">
+                                        <a class="shop__link" href="#">Orange</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- pages modal -->
+
+
+        <div class="shopper" id="homeModal3">
+            <button class="md__btn-back" id="homeClose3">
+                <i class="fal fa-angle-double-left"></i>
+                Back to home
+            </button>
+            <ul class="pages__list">
+                <li class="pages__item">
+                    <a href="#">
+                        <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                    </a>
+                </li>
+                <li class="pages__item">
+                    <a href="#">
+                        <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                    </a>
+                </li>
+                <li class="pages__item">
+                    <a href="#">
+                        <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                    </a>
+                </li>
+                <li class="pages__item">
+                    <a href="#">
+                        <img class="pages__img" src="./images/pages1.jpg" alt="pages">
+                    </a>
+                </li>
+                <li class="pages__item">
+                    <a href="#">
+                        <img class="pages__img" src="./images/pages4.jpg" alt="pages">
+                    </a>
+                </li>
+                <li class="pages__item">
+                    <a href="#">
+                        <img class="pages__img" src="./images/pages3.jpg" alt="pages">
+                    </a>
+                </li>
+                <li class="pages__item">
+                    <a href="#">
+                        <img class="pages__img" src="./images/pages5.jpg" alt="pages">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- sitebar bottom menu -->
+
+        <div class="hero__sitebar-bottom sitebar-bm">
+            <ul class="sitebar-bm__list">
+                <li class="sitebar-bm__item">
+                    <button class="sitebar-bm__btn">
+                        <i class="fal fa-store"></i>
+                        <p class="sitebar-bm__name">shop</p>
+                    </button>
+                </li>
+                <li class="sitebar-bm__item">
+                    <button class="sitebar-bm__btn">
+                        <i class="fal fa-heart"></i>
+                        <p class="sitebar-bm__name">wishlist</p>
+                    </button>
+                </li>
+                <li class="sitebar-bm__item">
+                    <button class="sitebar-bm__btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fal fa-user-alt"></i>
+                        <p class="sitebar-bm__name">account</p>
+                    </button>
+                </li>
+                <li class="sitebar-bm__item">
+                    <button class="sitebar-bm__btn" id="searchBtn">
+                        <i class="fal fa-search" id="icon"></i>
+                        <p class="sitebar-bm__name">Search</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- modal user -->
+
+        <div class="offcanvas offcanvas-end users-modal" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-body leo">
+                <div class="offcanvas-header leo__header">
+                    <img src="./images/freshko-logo.jpg" alt="logo">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="leo__content">
+                    <form class="leo__form">
+                        <label class="leo__label"> Existing Account Login</label>
+                        <input class="leo__email" type="email" name="email" placeholder="Email Address" required>
+                        <input class="leo__pasword" type="password" name="password" placeholder="Password" required>
+                        <div class="d-flex">
+                            <div class="col-6">
+                                <input type="checkbox">
+                                <span class="leo__chekbox">Remember Me</span>
+                            </div>
+                            <div class="col-6">
+                                <a class="leo__forgot" href="#">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="leo__btn-box">
+                            <button class="leo__login login-btn" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div class="leo__media-titbox">
+                        <h3 class="leo__media-title">
+                            Connect with Social Networks
+                        </h3>
+                        <button class="leo__media-btn fcb">
+                            <i class='bx bxl-facebook'></i>
+                        </button>
+                        <button class="leo__media-btn ggl">
+                            <i class='bx bxl-google'></i>
+                        </button>
+                        <button class="leo__media-btn tw">
+                            <i class='bx bxl-twitter'></i>
+                        </button>
+                    </div>
+                    <div class="leo__registr">
+                        <h4 class="leo__label">New Account Register</h4>
+                        <form class="leo__reg">
+                            <input class="leo__email" type="text" name="name" placeholder="First Name" required>
+                            <input class="leo__email" type="text" name="lastname" placeholder="Last Name" required>
+                            <input class="leo__email" type="email" name="email" placeholder="Email Address" required>
+                            <input class="leo__email" type="password" name="password" placeholder="Password" required>
+                            <div class="leo__chekked">
+                                <input type="checkbox">
+                                <span class="leo__chekbox">I agree to the terms.</span>
+                            </div>
+                            <button type="submit" class="leo__reg-btn login-btn">Create an Account</button>
+                        </form>
+                    </div>
+                    <div class="d-flex leo__flexs">
+                        <div class="col-6">
+                            <div class="leo__world world">
+                                <span class="world__tit">Language:</span>
+                                <ul class="world__list">
+                                    <li class="world__item">
+                                        <a href="#">
+                                            <img src="./images/1.jpg" alt="flag">
+                                        </a>
+                                    </li>
+                                    <li class="world__item">
+                                        <a href="#">
+                                            <img src="./images/2.jpg" alt="flag">
+                                        </a>
+                                    </li>
+                                    <li class="world__item">
+                                        <a href="#">
+                                            <img src="./images/3.jpg" alt="flag">
+                                        </a>
+                                    </li>
+                                    <li class="world__item">
+                                        <a href="#">
+                                            <img src="./images/4.jpg" alt="flag">
+                                        </a>
+                                    </li>
+                                    <li class="world__item">
+                                        <a href="#">
+                                            <img src="./images/5.jpg" alt="flag">
+                                        </a>
+                                    </li>
+                                    <li class="world__item">
+                                        <a href="#">
+                                            <img src="./images/6.jpg" alt="flag">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="leo__valuta valuta">
+                                <span class="valuta__tit">Currency:</span>
+                                <ul class="valuta__list">
+                                    <li class="valuta__item">
+                                        <a class="valuta__link" href="#">EUR</a>
+                                    </li>
+                                    <li class="valuta__item">
+                                        <a class="valuta__link" href="#">USD</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <ul class="leo__user-info user-info">
+                                <li class="user-info__item">
+                                    <a href="#" class="user-info__link">
+                                        <i class='bx bxs-arrow-from-left'></i>
+                                        <span class="user-info__span">Sign in</span>
+                                    </a>
+                                </li>
+                                <li class="user-info__item">
+                                    <a href="#" class="user-info__link">
+                                        <i class='bx bxs-arrow-from-left'></i>
+                                        <span class="user-info__span">My Account</span>
+                                    </a>
+                                </li>
+                                <li class="user-info__item">
+                                    <a href="#" class="user-info__link">
+                                        <i class='bx bxs-arrow-from-left'></i>
+                                        <span class="user-info__span">Wishlist</span>
+                                    </a>
+                                </li>
+                                <li class="user-info__item">
+                                    <a href="#" class="user-info__link">
+                                        <i class='bx bxs-arrow-from-left'></i>
+                                        <span class="user-info__span">Compare(1)</span>
+                                    </a>
+                                </li>
+                                <li class="user-info__item">
+                                    <a href="#" class="user-info__link">
+                                        <i class='bx bxs-arrow-from-left'></i>
+                                        <span class="user-info__span">Checkout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- top menu modal -->
+
+        <div class="offcanvas offcanvas-start classet" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <span></span>
+                <button type="button" class="text-reset top-menu-btn" data-bs-dismiss="offcanvas" aria-label="Close">x
+                    close</button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="top-menu">
+                    <ul class="top-menu__list">
+                        <li class="top-menu__item">
+                            <a class="top-menu__link" href="#">Home</a>
+                            <button class="top-menu__arrow" id="openHomeBtn"><i
+                                    class='bx bx-chevrons-right'></i></button>
+                        </li>
+                        <li class="top-menu__item">
+                            <a class="top-menu__link" href="#">Shop</a>
+                            <button class="top-menu__arrow" id="openHomeBtn2"><i
+                                    class='bx bx-chevrons-right'></i></button>
+                        </li>
+                        <li class="top-menu__item">
+                            <a class="top-menu__link" href="#">Pages</a>
+                            <button class="top-menu__arrow" id="openHomeBtn3"><i
+                                    class='bx bx-chevrons-right'></i></button>
+                        </li>
+                        <li class="top-menu__item">
+                            <a class="top-menu__link" href="#">Blog</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a class="top-menu__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- eye modals -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body eye">
+                        <button type="button" class="btn-close eye__close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        <div class="eye__modal row">
+                            <div class="col-sm-6">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./images/eye-img2.jpg" class="d-block w-100" alt="orange">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/product2.jpg" class="d-block w-100" alt="orange">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/product5.jpg" class="d-block w-100" alt="orange">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="eye__desc">
+                                    <h2 class="eye__title">GRASSFED ORGANIC TURMERIC SUPERGHEE</h2>
+                                    <span class="eye__money">$15.00</span>
+                                    <p class="eye__text">Regular fit, round neckline, long sleeves. 100% cotton, brushed
+                                        inner side for extra comfort.</p>
+                                    <form class="eye__form d-flex">
+                                        <input class="eye__input" type="number" placeholder="1">
+                                        <button class="eye__btns" type="submit">
+                                            Add to card
+                                        </button>
+                                    </form>
+                                    <div class="eye__span-boxs">
+                                        <span class="eye__span">
+                                            <i class="bi bi-heart"></i>
+                                            Add to Wishlist
+                                        </span>
+                                        <span class="eye__span">
+                                            <i class="bi bi-shuffle"></i>
+                                            Add to Compare
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer share">
+                            <span class="share__text">Share:</span>
+                            <ul class="share__list">
+                                <li class="share__item">
+                                    <a class="share__link" href="#">
+                                        <i class="bx bxl-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="share__item">
+                                    <a class="share__link" href="#">
+                                        <i class="bi bi-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="share__item">
+                                    <a class="share__link" href="#">
+                                        <i class="bi bi-pinterest"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
