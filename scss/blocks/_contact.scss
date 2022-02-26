@@ -64,6 +64,7 @@
         display: flex;
         align-items: center;
     }
+
     &__link {
         @include link-none;
         color: #555;
@@ -72,6 +73,7 @@
         &:hover {
             color: $color-gren;
         }
+
         &:hover .bx {
             color: $color-gren;
         }
@@ -92,6 +94,7 @@
         display: flex;
         align-items: center;
     }
+
     &__desc {
         display: flex;
     }
@@ -110,7 +113,7 @@
         color: #bac34e;
         @include link-none;
     }
-  
+
     &__email-link {
         @include link-none;
         font-size: 14px;
@@ -168,6 +171,7 @@
 .contact-page {
     padding: 60px 0;
 }
+
 .stores {
 
     &__title {
@@ -176,10 +180,11 @@
         font-size: 18px;
         margin-bottom: 32px;
     }
+
     &__block {
         display: flex;
     }
-    
+
     &__icon {
         display: inline-block;
         vertical-align: middle;
@@ -190,30 +195,32 @@
     .bi-geo-alt-fill {
         color: #414141 !important;
         font-size: 25px;
-        
+
     }
+
     &__text-box {
         width: auto;
         overflow: hidden;
         display: block;
     }
-    
+
     &__text {
         color: #414141;
         font-size: 0.8125rem;
         margin-bottom: 0 !important;
     }
+
     &__link {
         @include link-none;
         display: block;
         font-size: 13px;
         color: #414141;
-    
+
         &:hover {
             color: $color-gren;
         }
     }
-    
+
     .bi-envelope-fill {
         color: #414141 !important;
         font-size: 23px;
@@ -225,54 +232,61 @@
     padding: 20px;
     border: 1px solid #aaa;
 }
+
 .cont {
     .cont__form {
         padding: 16px;
     }
+
     .cont__title {
         text-transform: uppercase;
         color: #414141;
         font-size: 18px;
         margin-bottom: 32px;
     }
-    
+
     .cont__group {
         display: flex;
         width: 90%;
         margin-bottom: 16px;
     }
+
     .cont__label {
         width: 30%;
         font-size: 14px;
         color: #414141;
         margin-bottom: 8px;
     }
+
     .width-lb {
         width: 60%;
     }
+
     .cont__select {
         background-color: #ebebeb;
         border: 1px solid #e2e2e2;
         color: #aaa;
         padding: 0.5rem 1rem;
         border-radius: 0.25rem;
-    
+
         &:focus {
             outline: 1px solid #00c3ff;
         }
     }
+
     .cont__email-input {
         background-color: #fff;
         border: 1px solid #e2e2e2;
         color: #aaa;
         padding: 0.5rem 1rem;
         border-radius: 0.25rem;
-    
+
         &:focus {
             outline: 1px solid #00c3ff;
         }
-    
+
     }
+
     .cont__form-file {
         background-color: #ebebeb;
         border: 1px solid #e2e2e2;
@@ -280,23 +294,24 @@
         padding: 0.5rem 1rem;
         border-radius: 0.25rem;
         width: 70%;
-    
+
         &:focus {
             outline: 1px solid #00c3ff;
         }
     }
+
     .cont__form-btn {
         border: 1px solid $color-gren;
         background-color: $color-gren;
-        border-bottom-right-radius:  0.25rem;
-        border-top-right-radius:  0.25rem;
+        border-bottom-right-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
         color: #fff;
         font-size: .6875rem;
         padding: 12.5px 15px;
         text-transform: uppercase;
         width: 30%;
         transition: all 0.2s ease;
-    
+
         &:hover {
             background-color: $dark-gren;
             color: #fff;
@@ -311,8 +326,8 @@
         color: #878787;
         display: inline-block;
     }
-    
-    
+
+
     .cont__text-aria {
         border-color: #aaa;
         width: 75%;
@@ -325,7 +340,7 @@
         color: #878787;
         padding: 8px 16px;
         width: 100%;
-    
+
         &:focus {
             outline: 1px solid #00c3ff;
         }
@@ -334,15 +349,16 @@
     .textarea-widthes {
         width: 100%;
     }
-    
+
     .lb-text-area {
         width: 27%;
     }
-    
+
     .cont__group-footer {
         display: flex;
         justify-content: flex-end;
     }
+
     .cont__btn {
         font-size: 12px;
         font-weight: 700;
@@ -353,7 +369,7 @@
         color: #000;
         transition: all 0.3s;
         border: 1px solid transparent;
-    
+
         &:hover {
             background-color: $dark-gren;
             color: #fff;
@@ -378,6 +394,7 @@
     .none-number {
         display: none;
     }
+
     .users-with {
         width: 50%;
     }
@@ -397,6 +414,7 @@
         padding: 5px 0;
         width: 50%;
     }
+
     .cont__form-btn {
         padding: 2px 2px;
         width: 50%;
@@ -417,6 +435,7 @@
             padding-bottom: 30px;
             align-items: flex-start;
         }
+
         .none-number {
             display: none;
         }
@@ -455,7 +474,7 @@
         justify-content: center;
     }
 
-        
+
     .cont__group {
         display: flex;
         flex-direction: column;
@@ -465,6 +484,7 @@
     .cont__label {
         width: 100% !important;
     }
+
     .width-lb {
         width: 100% !important;
     }
@@ -473,14 +493,13 @@
         padding: 0.5rem 1rem;
         width: 70%;
     }
+
     .cont__form-btn {
         padding: 0.5rem 1rem;
         width: 30%;
     }
 
 }
-
-
 
 @media screen and (max-width: 576px) {
     .none-number {
@@ -491,12 +510,9 @@
         padding: 5px 0;
         width: 50%;
     }
+
     .cont__form-btn {
         padding: 2px 2px;
         width: 50%;
     }
 }
-
-
-
-
